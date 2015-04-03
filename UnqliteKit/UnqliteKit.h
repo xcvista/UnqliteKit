@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char UnqliteKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <UnqliteKit/PublicHeader.h>
 
-
+#import <UnqliteKit/unqlite.h>
+#import <UnqliteKit/UNQDatabase.h>

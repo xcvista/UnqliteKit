@@ -10,6 +10,11 @@
 		1D70DA781ACD54D7000D0EE1 /* UnqliteKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D70DA771ACD54D7000D0EE1 /* UnqliteKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D70DA7E1ACD54D7000D0EE1 /* UnqliteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D70DA721ACD54D7000D0EE1 /* UnqliteKit.framework */; };
 		1D70DA851ACD54D7000D0EE1 /* UnqliteKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D70DA841ACD54D7000D0EE1 /* UnqliteKitTests.m */; };
+		1D70DA931ACD5560000D0EE1 /* unqlite_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D70DA921ACD5556000D0EE1 /* unqlite_config.h */; };
+		1D70DA961ACD5812000D0EE1 /* UNQDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D70DA941ACD5812000D0EE1 /* UNQDatabase.h */; };
+		1D70DA971ACD5812000D0EE1 /* UNQDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D70DA951ACD5812000D0EE1 /* UNQDatabase.m */; };
+		1D70DA9A1ACE2521000D0EE1 /* unqlite.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D70DA981ACE2521000D0EE1 /* unqlite.c */; };
+		1D70DA9B1ACE2521000D0EE1 /* unqlite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D70DA991ACE2521000D0EE1 /* unqlite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		1D70DA7D1ACD54D7000D0EE1 /* UnqliteKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnqliteKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D70DA831ACD54D7000D0EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D70DA841ACD54D7000D0EE1 /* UnqliteKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnqliteKitTests.m; sourceTree = "<group>"; };
+		1D70DA921ACD5556000D0EE1 /* unqlite_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unqlite_config.h; sourceTree = "<group>"; };
+		1D70DA941ACD5812000D0EE1 /* UNQDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNQDatabase.h; sourceTree = "<group>"; };
+		1D70DA951ACD5812000D0EE1 /* UNQDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNQDatabase.m; sourceTree = "<group>"; };
+		1D70DA981ACE2521000D0EE1 /* unqlite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unqlite.c; sourceTree = "<group>"; };
+		1D70DA991ACE2521000D0EE1 /* unqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unqlite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				1D70DA771ACD54D7000D0EE1 /* UnqliteKit.h */,
+				1D70DA921ACD5556000D0EE1 /* unqlite_config.h */,
+				1D70DA991ACE2521000D0EE1 /* unqlite.h */,
+				1D70DA981ACE2521000D0EE1 /* unqlite.c */,
+				1D70DA941ACD5812000D0EE1 /* UNQDatabase.h */,
+				1D70DA951ACD5812000D0EE1 /* UNQDatabase.m */,
 				1D70DA751ACD54D7000D0EE1 /* Supporting Files */,
 			);
 			path = UnqliteKit;
@@ -109,7 +124,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D70DA961ACD5812000D0EE1 /* UNQDatabase.h in Headers */,
+				1D70DA9B1ACE2521000D0EE1 /* unqlite.h in Headers */,
 				1D70DA781ACD54D7000D0EE1 /* UnqliteKit.h in Headers */,
+				1D70DA931ACD5560000D0EE1 /* unqlite_config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +176,7 @@
 		1D70DA691ACD54D7000D0EE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = UNQ;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = DreamCity;
 				TargetAttributes = {
@@ -209,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D70DA9A1ACE2521000D0EE1 /* unqlite.c in Sources */,
+				1D70DA971ACD5812000D0EE1 /* UNQDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -309,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
